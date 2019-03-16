@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>SAH</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  
+  <h1 class="sr-only">SAH</h1>
+  <header>
+    <nav class="navbar navbar-default">
+      <h2 class="sr-only">Header</h2>
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="search.html"><img src="images/logo.png" alt="SAH"></a>
+          <ul class="nav navbar-nav navbar-right user">
+						<li class="hidden-xs representative"><a href="#" class="dropdown-toggle"><span class="person">Mari Maasikas</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="js-show-warning">My settings</a></li>
+								<li><a href="#" class="js-show-warning">My CVs</a></li>
+								<li><a href="#" class="js-show-warning">My job ads</a></li>
+								<li><a href="#" class="js-show-warning">Saved searches</a></li>
+								<li><a href="../index.html">Log out</a></li>
+							</ul>
+						</li>
+						<li class="search-form">
+							<button title="Search" type="button" class="search js-open-search"><i class="icon-search"></i></button>
+							<form action="#" class="search-field">
+								 <input type="search">
+								<div class="dropdown-menu">
+									<div class="help-text">
+										Enter keyword, id or employer. Press Enter to start search.
+									</div>
+									<div class="saved-searches">
+										<h2>My saved searches</h2>
+										<ul>
+											<li><a href="#" class="js-show-warning">Werewolf jobs in Italy</a></li>
+											<li><a href="#" class="js-show-warning">Full-time unicorn jobs</a></li>
+											<li><a href="#" class="js-show-warning">Ski resort jobs for yetis</a></li>
+											<li><a href="#" class="js-show-warning">Mermaid jobs in Asia</a></li>
+										</ul>
+									</div>
+								</div>
+								<button type="submit" class="sr-only btn btn-primary">Search</button>
+							</form>
+							<button type="button" title="Sulge otsing" class="close-search"><span></span></button>
+						</li>
+					</ul>
+          <ul class="nav navbar-nav navbar-right language hidden-xs">
+            <li><a href="#" class="js-show-warning">Eesti keeles</a></li>
+          </ul>
+          <button title="Open navigation" type="button" class="navbar-toggle js-show-warning"><span></span></button>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-subnav">
+      <h2 class="sr-only">Main navigation</h2>
+      <div class="container">
+        <div class="navbar-collapse">
+          <div class="navbar-collapse-header">
+            <a href="#">Eesti keeles</a>
+            <button title="Open navigation" type="button" class="navbar-toggle js-show-warning"><span></span></button>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="search.html">Job search</a></li>
+            <li><a href="new-job.html">Create new ad</a></li>
+            <li><a href="#" class="js-show-warning">Create new CV</a></li>
+            <li><a href="#" class="js-show-warning">Services</a></li>
+            <li><a href="#" class="js-show-warning">Settings</a></li>
+            <li><a href="#" class="js-show-warning">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="has-sidebar search" id="main">
+    <div class="container">
+      <div class="sidebar-container">
+        <form>
+          <div class="sidebar">
+            <div class="panel-group accordion">
+              <div class="panel panel-default panel-open">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a href="#" class="accordion-toggle">
+                      Saved searches
+                    </a>
+                  </h3>
+                </div>
+                <div class="panel-collapse collapse in">
+                  <div class="panel-body">
+    
+                    <ul class="saved-searches">
+                      <li>
+                        <a href="#" class="js-show-warning">Werewolf jobs in Italy</a>
+                        <div class="actions" >
+                          <a href  class="action-btn"><i class="icon-gear"></i>
+                          </a>
+                          <ul class="dropdown-menu"  role="menu">
+                            <li role="menuitem"><a href="#" class="js-show-warning">Edit</a></li>
+                            <li role="menuitem"><a href="#" class="js-show-warning">Delete</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="js-show-warning">Full-time unicorn jobs</a>
+                        <div class="actions" >
+                          <a href  class="action-btn"><i class="icon-gear"></i>
+                          </a>
+                          <ul class="dropdown-menu"  role="menu">
+                            <li role="menuitem"><a href="#" class="js-show-warning">Edit</a></li>
+                            <li role="menuitem"><a href="#" class="js-show-warning">Delete</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="js-show-warning">Ski resort jobs for yetis</a>
+                        <div class="actions" >
+                          <a href  class="action-btn"><i class="icon-gear"></i>
+                          </a>
+                          <ul class="dropdown-menu"  role="menu">
+                            <li role="menuitem"><a href="#" class="js-show-warning">Edit</a></li>
+                            <li role="menuitem"><a href="#" class="js-show-warning">Delete</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="js-show-warning">Mermaid jobs in Asia</a>
+                        <div class="actions" >
+                          <a href  class="action-btn"><i class="icon-gear"></i>
+                          </a>
+                          <ul class="dropdown-menu"  role="menu">
+                            <li role="menuitem"><a href="#" class="js-show-warning">Edit</a></li>
+                            <li role="menuitem"><a href="#" class="js-show-warning">Delete</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default panel-open">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <a href="#" class="accordion-toggle">
+                      Search criteria
+                    </a>
+                  </h3>
+                </div>
+                <div class="panel-collapse collapse in">
+                  <div class="panel-body">
+
+                    <div class="form-group">
+                      <label for="sf1">ID</label>
+                      <input type="number" id="sf1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="sf2">Job title</label>
+                      <input type="text" id="sf2" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="sf5">Employer</label>
+                      <div class="custom-autocomplete">
+                        <input type="text" id="sf5" class="form-control" autocomplete="off">
+                        <div class="dropdown">
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-header">My employers</li>
+                            <li><a href="#">Let’s Roll OÜ</a></li>
+                            <li><a href="#">SAH OÜ</a>
+                            </li>
+                            <li><a href="#">Nortal AS</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="sf3">Location</label>
+                      <select id="sf3" class="form-control" onchange="throw Error('This is a bug number 002-1455. Report that to a developer.')">
+                        <option value="0">-Vali-</option>
+                        <option value="1">Tallinn</option>
+                        <option value="2">Tartu</option>
+                        <option value="3">Home office</option>
+                        <option value="4">International</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sf4">Category</label>
+                      <select id="sf4" class="form-control">
+                        <option value="0">-Vali-</option>
+                        <option value="1">Banking / Finance / Insurance</option>
+                        <option value="2">Construction / Real Estate</option>
+                        <option value="3">Education / Science / Research</option>
+                        <option value="4">Health Care / Social work</option>
+                        <option value="5">Information Technology</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sf7">Working type</label>
+                      <select id="sf7" class="form-control">
+                        <option value="0">-Vali-</option>
+                        <option value="1">Full-time</option>
+                        <option value="2">Part-time</option>
+                        <option value="3">Internship</option>
+                        <option value="4">Temporary</option>
+                        <option value="5">Employee</option>
+                        <option value="6">Contract</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="sf8">Published</label>
+                      <input type="text" name="dates" class="form-control" id="sf8">                      
+                    </div>
+                    <div class="form-group">
+                      <label for="sf9">Submission deadline</label>
+                      <input type="text" name="dates" class="form-control" id="sf9">
+                    </div>
+                    <div class="form-group">
+                      <label for="p2sf4">Salary (neto</label>
+                      <div class="range">
+                        <input type="number" id="p2sf4" class="form-control">
+                        <label class="dash" for="p2sf4b"><span class="sr-only">-</span></label>
+                        <input type="number" id="p2sf4b" class="form-control">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-footer">
+            <button type="submit" class="btn btn-primary js-show-warning">Search</button>
+            <button type="button" class="btn btn-link js-show-warning">Save search</button>
+            <button type="reset" class="btn btn-link">Clear filter</button>
+          </div>
+        </form>
+      </div>
+      <div class="content">
+
+        <div id="warning-functionality" class="alert alert-warning">This functionality is not developed yet. This is not a bug - please do not report.</div>
+        <div id="form-success-message" class="alert alert-success">Job advertisement successfully deleted!</div>
+
+        <div class="title-container">
+          <h2>Ski resort jobs for yetis (11)</h2>
+          <div class="title-actions">
+            <label for="sort-options">Sort:</label>
+            <select id="job-sort" class="sort-select form-control" style="float: none; width: auto;">
+              <option>Ascending according to submission date</option>
+              <option>Descending according to submission date</option>
+              <option>Ascending according to job title</option>
+              <option>Descending according to job title</option>
+              <option>Ascending according to time of publification</option>
+              <option>Descending according to time of publification</option>
+              <option>Ascending according to ID</option>
+              <option>Descending according to ID</option>
+            </select>
+          </div>
+        </div>
+        <ol class="results">
+          <li>
+            <h3 class="result-title"><a href="job-details.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="job-details.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="edit-job.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="job-details.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="job-details.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="job-details.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="edit-job.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="job-detaills.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="edit-job.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="result-title"><a href="job-details.html">Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</a></h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">ID:</span>000001</li>
+                  <li><span class="label">Employer:</span>Avalanche Resort (12341234)</li>
+                  <li><span class="label">Job title:</span>Yeti</li>
+                  <li><span class="label">Category:</span>Education / Science / Research</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="meta-list">
+                  <li><span class="label">Location:</span>Austria</li>
+                  <li><span class="label">Published:</span>01.03.2019 10:24</li>
+                  <li><span class="label">Deadline:</span>30.05.2019 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="result-links">
+              <li><a href="apply-for-job.html">Apply</a></li>
+              <li><a href="#" class="js-show-warning">Save</a></li>
+              <li><a href="#" class="js-show-warning">Share</a></li>
+			  <li><a href="#" class="js-show-warning">Save</a></li>
+            </ul>
+          </li>
+        </ol>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h2 class="sr-only">Jaluse navigatsioon</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-3">
+              <h3>Employer</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">Create CV</a></li>
+                <li><a href="#" class="js-show-warning">How to create a CV</a></li>
+                <li><a href="search.html">Search for job ads</a></li>
+                <li><a href="#" class="js-show-warning">Job ads abroad</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>Jobseeker</h3>
+              <ul>
+                <li><a href="new-job.html">Create job ad</a></li>
+                <li><a href="#" class="js-show-warning">How to create a job ad</a></li>
+                <li><a href="#" class="js-show-warning">Search for CVs</a></li>
+                <li><a href="#" class="js-show-warning">Recruitment servisces</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>User</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">My settings</a></li>
+                <li><a href="#" class="js-show-warning">My CVs</a></li>
+                <li><a href="#" class="js-show-warning">My job ads</a></li>
+                <li><a href="#" class="js-show-warning">Saved data</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>General info</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">Contact</a></li>
+                <li><a href="#" class="js-show-warning">Advertising</a></li>
+                <li><a href="#" class="js-show-warning">Sitemap</a></li>
+                <li><a href="#" class="js-show-warning">User manuals</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <h3>Contact/Helpdesk</h3>
+          <ul>
+            <li><a href="#" class="js-show-warning">superawesomehiring@mailinator.com</a></li>
+            <li>123 4567</li>
+            <li>E-R 9:00-16:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script src="js/main.js"></script>
+
+</body>

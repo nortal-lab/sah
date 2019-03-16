@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>SAH</title>
+  <link rel="icon" href="icons/favicon.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="procurement">
+  
+  <h1 class="sr-only">SAH</h1>
+  <header>
+    <nav class="navbar navbar-default">
+      <h2 class="sr-only">Header</h2>
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="search.html"><img src="images/logo.png" alt="SAH"></a>
+          <ul class="nav navbar-nav navbar-right user">
+						<li class="hidden-xs representative"><a href="#" class="dropdown-toggle"><span class="person">Mari Maasikas</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="js-show-warning">My settings</a></li>
+								<li><a href="#" class="js-show-warning">My CVs</a></li>
+								<li><a href="#" class="js-show-warning">My job ads</a></li>
+								<li><a href="#" class="js-show-warning">Saved searches</a></li>
+								<li><a href="../index.html">Log out</a></li>
+							</ul>
+						</li>
+						<li class="search-form">
+							<button title="Search" type="button" class="search js-open-search"><i class="icon-search"></i></button>
+							<form action="#" class="search-field">
+								 <input type="search">
+								<div class="dropdown-menu">
+									<div class="help-text">
+										Enter keyword, id or employer. Press Enter to start search.
+									</div>
+									<div class="saved-searches">
+										<h2>My saved searches</h2>
+										<ul>
+											<li><a href="#" class="js-show-warning">Werewolf jobs in Italy</a></li>
+											<li><a href="#" class="js-show-warning">Full-time unicorn jobs</a></li>
+											<li><a href="#" class="js-show-warning">Ski resort jobs for yetis</a></li>
+											<li><a href="#" class="js-show-warning">Mermaid jobs in Asia</a></li>
+										</ul>
+									</div>
+								</div>
+								<button type="submit" class="sr-only btn btn-primary">Search</button>
+							</form>
+							<button type="button" title="Sulge otsing" class="close-search"><span></span></button>
+						</li>
+					</ul>
+          <ul class="nav navbar-nav navbar-right language hidden-xs">
+            <li><a href="#" class="js-show-warning">Eesti keeles</a></li>
+          </ul>
+          <button title="Open navigation" type="button" class="navbar-toggle js-show-warning"><span></span></button>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-subnav">
+      <h2 class="sr-only">Main navigation</h2>
+      <div class="container">
+        <div class="navbar-collapse">
+          <div class="navbar-collapse-header">
+            <a href="#" class="js-show-warning">Eesti keeles</a>
+            <button title="Open navigation" type="button" class="navbar-toggle js-show-warning"><span></span></button>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="search.html">Job search</a></li>
+            <li class="active"><a href="new-job.html">Create new ad</a></li>
+            <li><a href="#" class="js-show-warning">Create new CV</a></li>
+            <li><a href="#" class="js-show-warning">Services</a></li>
+            <li><a href="#" class="js-show-warning">Settings</a></li>
+            <li><a href="#" class="js-show-warning">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="doc-header">
+      <div class="container">
+        <div class="title-container">
+          <h2>Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <ul class="meta-list">
+              <li><span class="label">ID:</span><strong>000001</strong></li>
+              <li><span class="label">Employer:</span><strong>Avalanche Resort (12341234)</strong></li>
+              <li><span class="label">Work experience required:</span><strong>0-2 years</strong></li>
+              <li><span class="label">Languages required:</span><strong>English, French</strong></li>
+              <li><span class="label">Education required:</span><strong>Basic education</strong></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul class="meta-list">
+              <li><span class="label">Published:</span><strong>01.03.2019 10:24</strong></li>
+              <li><span class="label">Deadline:</span><strong>30.05.2019 12:00</strong></li>
+              <li><span class="label">Location:</span><strong>Austria</strong></li>
+              <li><span class="label">Working time:</span><strong>Full-time</strong></li>
+              <li><span class="label">Contact person:</span><strong>Lukas Bauer</strong></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul class="meta-list">
+              <li><a class="download" href="apply-for-job.html">Apply</a></li>
+              <li><a class="copy js-show-warning" href="#">Save</a></li>
+              <li><a class="share js-show-warning" href="#">Share</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container">
+      <div class="content">
+
+        <div id="warning-functionality" class="alert alert-warning">This functionality is not developed yet. This is not a bug - please do not report.</div>
+        <div id="form-success-message" class="alert alert-success">We deleted all the data you just entered. Sorry!</div>
+
+        <div class="title-container underline">
+          <h2>Creating new job advertisement</h2>
+        </div>
+        <form class="form-horizontal form-validate" action="#">
+
+          <div class="form-group required">
+            <label for="f-e-1" class="control-label col-sm-4">Advertisement name:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-1" rows="3" required="true" maxlength="170"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-2" class="col-sm-4 control-label">Employer:</label>
+            <div class="col-sm-6 col-md-4">
+              <select class="form-control" id="f-e-2" required="true" onchange="throw Error('Error no 003-1302 just happened. Be sure to mention that.')">
+                <option>-Select-</option>
+                <option>Avalanche Resort (12341234)</option>
+				<option>Chupacadabra Resort (12341235)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-3" class="col-sm-4 control-label">Contact person:</label>
+            <div class="col-sm-6 col-md-4">
+              <select class="form-control" id="f-e-3" required="true">
+                <option>-Select-</option>
+                <option>Lukas Bauer</option>
+                <option>Tobias Gruber</option>
+                <option>Jonas Wagner</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-4" class="control-label col-sm-4">General description:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-4" rows="10" required="true" maxlength="3000"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label class="col-sm-4 control-label">Working time and type:</label>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">Internship</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">Temporary</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">Contract</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">Employee</span> </label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">Full-time</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">Part-time</span> </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-5" class="control-label col-sm-4">Location:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-5" rows="3" required="true" maxlength="170"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-6" class="col-sm-4 control-label">Application deadline:</label>
+            <div class="col-sm-6 col-md-3">
+              <input type="text" name="date" class="form-control" id="f-e-6" required="true"></input>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-7" class="control-label col-sm-4">Starting date:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-7" rows="2" required="true" maxlength="170"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-8" class="col-sm-4 control-label">Work experience required:</label>
+            <div class="col-sm-6 col-md-4">
+              <select class="form-control" id="f-e-8" required="true">
+                <option>-Select-</option>
+                <option>None</option>
+                <option>0-2 years</option>
+                <option>2-5 years</option>
+                <option>5-10 years</option>
+                <option>10+ years</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <p class="control-label col-sm-4">Education needed:</p>
+            <div class="col-sm-8">
+              <div class="radio">
+                <label><input type="radio" class="px" name="f-e-9"> <span class="lbl">Basic education</span> </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" class="px" name="f-e-9"> <span class="lbl">Secondary education</span> </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" class="px" name="f-e-9"> <span class="lbl">Higher education in acqusition</span> </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" class="px" name="f-e-9"> <span class="lbl">Bachelor’s degree</span> </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" class="px" name="f-e-9"> <span class="lbl">Master’s or Doctor’s degree</span> </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group required">
+            <label class="col-sm-4 control-label">Languages required:</label>
+            <div class="col-sm-8">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">estonian</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">english</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">russian</span> </label>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">chinese</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">german</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">french</span> </label>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">spanish</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">finnish</span> </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="px"> <span class="lbl">italian</span> </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-10" class="control-label col-sm-4">Job description:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-10" rows="5" required="true" maxlength="1000"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-11" class="control-label col-sm-4">Requirements:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-11" rows="5" required="true" maxlength="1000"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-12" class="control-label col-sm-4">Beneficial skills:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-12" rows="5" required="true" maxlength="1000"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-13" class="control-label col-sm-4">We offer:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-13" rows="5" required="true" maxlength="1000"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-14" class="control-label col-sm-4">Additional information:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-14" rows="5" maxlength="1000"></textarea>
+              <p class="help-block bottom counter"><span class="nr"></span> characters</p>
+            </div>
+          </div>
+
+         <div class="form-group">
+            <label for="f-e-16" class="control-label col-sm-4">Salary (neto):</label>
+            <div class="col-sm-6 col-md-4">
+              <div class="input-group has-unit">
+                <input type="text" class="form-control" id="f-e-16"></input>
+                <span class="input-group-addon unit">EUR</span>
+              </div>
+            </div>
+		</div>
+		
+		<div class="form-group required" file-drop-zone>
+            <label class="control-label col-sm-4" for="f-e-1">Additional files:</label>
+            <div class="col-sm-8">
+              <input type="file" id="f-e-1" required="true"> 
+            </div>
+          </div>
+          
+          <div class="form-actions">
+            <button class="btn btn-primary btn-lg pull-right" type="submit">Save and Publish</button>
+            <button class="btn btn-default btn-lg pull-right js-show-warning" type="button">Delete</button>
+            <button class="btn btn-default btn-lg pull-right js-show-warning" type="button">Save</button>
+            <a class="btn btn-link btn-lg pull-left" href="search.html">Back</a>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h2 class="sr-only">Jaluse navigatsioon</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-3">
+              <h3>Employer</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">Create CV</a></li>
+                <li><a href="#" class="js-show-warning">How to create a CV</a></li>
+                <li><a href="search.html">Search for job ads</a></li>
+                <li><a href="#" class="js-show-warning">Job ads abroad</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>Jobseeker</h3>
+              <ul>
+                <li><a href="new-job.html">Create job ad</a></li>
+                <li><a href="#" class="js-show-warning">How to create a job ad</a></li>
+                <li><a href="#" class="js-show-warning">Search for CVs</a></li>
+                <li><a href="#" class="js-show-warning">Recruitment servisces</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>User</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">My settings</a></li>
+                <li><a href="#" class="js-show-warning">My CVs</a></li>
+                <li><a href="#" class="js-show-warning">My job ads</a></li>
+                <li><a href="#" class="js-show-warning">Saved data</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>General info</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">Contact</a></li>
+                <li><a href="#" class="js-show-warning">Advertising</a></li>
+                <li><a href="#" class="js-show-warning">Sitemap</a></li>
+                <li><a href="#" class="js-show-warning">User manuals</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <h3>Contact/Helpdesk</h3>
+          <ul>
+            <li><a href="#" class="js-show-warning">superawesomehiring@mailinator.com</a></li>
+            <li>123 4567</li>
+            <li>E-R 9:00-16:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script src="js/main.js"></script>
+
+</body>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>SAH</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="procurement">
+  
+  <h1 class="sr-only">SAH</h1>
+  <header>
+    <nav class="navbar navbar-default">
+      <h2 class="sr-only">Header</h2>
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="search.html"><img src="images/logo.png" alt="SAH"></a>
+          <ul class="nav navbar-nav navbar-right user">
+						<li class="hidden-xs representative"><a href="#" class="dropdown-toggle"><span class="person">Mari Maasikas</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="js-show-warning">My settings</a></li>
+								<li><a href="#" class="js-show-warning">My CVs</a></li>
+								<li><a href="#" class="js-show-warning">My job ads</a></li>
+								<li><a href="#" class="js-show-warning">Saved searches</a></li>
+								<li><a href="../indeks.html">Log out</a></li>
+							</ul>
+						</li>
+						<li class="search-form">
+							<button title="Search" type="button" class="search js-open-search"><i class="icon-search"></i></button>
+							<form action="#" class="search-field">
+								 <input type="search">
+								<div class="dropdown-menu">
+									<div class="help-text">
+										Enter keyword, id or employer. Press Enter to start search.
+									</div>
+									<div class="saved-searches">
+										<h2>My saved searches</h2>
+										<ul>
+											<li><a href="#" class="js-show-warning">Werewolf jobs in Italy</a></li>
+											<li><a href="#" class="js-show-warning">Full-time unicorn jobs</a></li>
+											<li><a href="#" class="js-show-warning">Ski resort jobs for yetis</a></li>
+											<li><a href="#" class="js-show-warning">Mermaid jobs in Asia</a></li>
+										</ul>
+									</div>
+								</div>
+								<button type="submit" class="sr-only btn btn-primary">Search</button>
+							</form>
+							<button type="button" title="Sulge otsing" class="close-search"><span></span></button>
+						</li>
+					</ul>
+          <ul class="nav navbar-nav navbar-right language hidden-xs">
+            <li><a href="#" class="js-show-warning">Eesti keeles</a></li>
+          </ul>
+          <button title="Open navigation" type="button" class="navbar-toggle js-show-warning"><span></span></button>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-subnav">
+      <h2 class="sr-only">Main navigation</h2>
+      <div class="container">
+        <div class="navbar-collapse">
+          <div class="navbar-collapse-header">
+            <a href="#">Eesti keeles</a>
+            <button title="Open navigation" type="button" class="navbar-toggle js-show-warning"><span></span></button>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="search.html">Job search</a></li>
+            <li><a href="new-job.html">Create new ad</a></li>
+            <li><a href="#" class="js-show-warning">Create new CV</a></li>
+            <li><a href="#" class="js-show-warning">Services</a></li>
+            <li><a href="#" class="js-show-warning">Settings</a></li>
+            <li><a href="#" class="js-show-warning">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="doc-header">
+      <div class="container">
+        <div class="title-container">
+          <h2>Well-known Austria ski resort is looking for a yeti for 2019/20 winter season</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <ul class="meta-list">
+              <li><span class="label">ID:</span><strong>000001</strong></li>
+              <li><span class="label">Employer:</span><strong>Avalanche Resort (12341234)</strong></li>
+              <li><span class="label">Work experience required:</span><strong>0-2 years</strong></li>
+              <li><span class="label">Languages required:</span><strong>English, French</strong></li>
+              <li><span class="label">Education required:</span><strong>Basic education</strong></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul class="meta-list">
+              <li><span class="label">Published:</span><strong>01.03.2019 10:24</strong></li>
+              <li><span class="label">Deadline:</span><strong>30.05.2019 12:00</strong></li>
+              <li><span class="label">Location:</span><strong>Austria</strong></li>
+              <li><span class="label">Working time:</span><strong>Full-time</strong></li>
+              <li><span class="label">Contact person:</span><strong>Lukas Bauer</strong></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul class="meta-list">
+              <li><a class="download" href="apply-for-job.html">Apply</a></li>
+              <li><a class="copy js-show-warning" href="#">Save</a></li>
+              <li><a class="share js-show-warning" href="#">Share</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container">
+      <div class="content">
+
+        <div id="warning-functionality" class="alert alert-warning">This functionality is not developed yet. This is not a bug - please do not report.</div>
+        <div id="form-success-message" class="alert alert-success">Tnak you! Your form is submitted.</div>
+
+        <div class="title-container underline">
+          <h2>Apply now</h2>
+        </div>
+        <form class="form-horizontal form-validate" action="#">
+
+          <div class="form-group required" file-drop-zone>
+            <label class="control-label col-sm-4" for="f-e-1">Choose files:</label>
+            <div class="col-sm-8">
+              <input type="file" id="f-e-1" required="true"> 
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-2" class="col-sm-4 control-label">First name:</label>
+            <div class="col-sm-6 col-md-4">
+              <input type="text" class="form-control" id="f-e-2" required="true"></input>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-3" class="col-sm-4 control-label">Surname:</label>
+            <div class="col-sm-6 col-md-4">
+              <input type="text" class="form-control" id="f-e-3" required="true"></input>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-4" class="col-sm-4 control-label">E-mail:</label>
+            <div class="col-sm-6 col-md-4">
+              <input type="email" class="form-control" id="f-e-4" required="true"></input>
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label for="f-e-5" class="col-sm-4 control-label">Phone number:</label>
+            <div class="col-sm-6 col-md-4">
+              <input type="tel" class="form-control" id="f-e-5" required="true"></input>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f-e-6" class="control-label col-sm-4">Application letter:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="f-e-6" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <font color="f6f4f2">The system probably evaluates your CV too weak for this competition, so it is directly sent to recycle bin.</font>
+			<button class="btn btn-primary btn-lg pull-right" type="submit">Send</button>
+			            <a class="btn btn-link btn-lg pull-left" href="job-details.html">Back</a>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h2 class="sr-only">Jaluse navigatsioon</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-3">
+              <h3>Employer</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">Create CV</a></li>
+                <li><a href="#" class="js-show-warning">How to create a CV</a></li>
+                <li><a href="search.html">Search for job ads</a></li>
+                <li><a href="#" class="js-show-warning">Job ads abroad</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>Jobseeker</h3>
+              <ul>
+                <li><a href="new-job.html">Create job ad</a></li>
+                <li><a href="#" class="js-show-warning">How to create a job ad</a></li>
+                <li><a href="#" class="js-show-warning">Search for CVs</a></li>
+                <li><a href="#" class="js-show-warning">Recruitment servisces</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>User</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">My settings</a></li>
+                <li><a href="#" class="js-show-warning">My CVs</a></li>
+                <li><a href="#" class="js-show-warning">My job ads</a></li>
+                <li><a href="#" class="js-show-warning">Saved data</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h3>General info</h3>
+              <ul>
+                <li><a href="#" class="js-show-warning">Contact</a></li>
+                <li><a href="#" class="js-show-warning">Advertising</a></li>
+                <li><a href="#" class="js-show-warning">Sitemap</a></li>
+                <li><a href="#" class="js-show-warning">User manuals</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <h3>Contact/Helpdesk</h3>
+          <ul>
+            <li><a href="#" class="js-show-warning">superawesomehiring@mailinator.com</a></li>
+            <li>123 4567</li>
+            <li>E-R 9:00-16:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+</body>
